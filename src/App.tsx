@@ -119,7 +119,7 @@ const Navbar = () => {
             <a href="#about" className="font-medium hover:text-brand-primary transition-colors">About Us</a>
             <a href="#testimonials" className="font-medium hover:text-brand-primary transition-colors">Reviews</a>
             <a href="#faq" className="font-medium hover:text-brand-primary transition-colors">FAQ</a>
-            <button className="btn-primary !py-2 !px-6 !text-base">Order Now</button>
+            <a href="https://www.facebook.com/profile.php?id=61577399925375" target="_blank" rel="noopener noreferrer" className="btn-primary !py-2 !px-6 !text-base inline-flex items-center justify-center">Order Now</a>
           </div>
           
           <div className="md:hidden">
@@ -144,7 +144,7 @@ const Navbar = () => {
               <a href="#about" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2 border-b border-gray-50">About Us</a>
               <a href="#testimonials" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2 border-b border-gray-50">Reviews</a>
               <a href="#faq" onClick={() => setIsOpen(false)} className="block text-lg font-medium py-2 border-b border-gray-50">FAQ</a>
-              <button className="w-full btn-primary mt-4">Order Now</button>
+              <a href="https://www.facebook.com/profile.php?id=61577399925375" target="_blank" rel="noopener noreferrer" className="w-full btn-primary mt-4 inline-flex items-center justify-center">Order Now</a>
             </div>
           </motion.div>
         )}
@@ -177,10 +177,9 @@ const Hero = () => {
               Gawing espesyal ang bawat kagat. Homemade, affordable, at punong-puno ng flavor! Tikman ang palamang hindi tinipid.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="btn-primary flex items-center justify-center gap-2">
+              <a href="https://www.facebook.com/profile.php?id=61577399925375" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center justify-center gap-2">
                 Order via Messenger <MessageCircle size={20} />
-              </button>
-              <button className="btn-secondary">View Menu</button>
+              </a>
             </div>
             
             <div className="mt-12 flex items-center gap-6">
@@ -265,9 +264,6 @@ const ProductSection = () => {
                 <p className="text-gray-500 text-sm mb-4 line-clamp-2">{product.description}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-brand-primary">₱{product.price}</span>
-                  <button className="p-3 bg-white text-brand-primary rounded-full shadow-md hover:bg-brand-primary hover:text-white transition-colors">
-                    <ShoppingCart size={20} />
-                  </button>
                 </div>
               </div>
             </motion.div>
@@ -285,7 +281,7 @@ const ProductSection = () => {
                 Kunin ang aming "Palaman Sampler Pack" (5 Jars) for only <span className="text-brand-secondary font-bold text-2xl">₱560</span>. 
                 Save ₱195 and get a FREE wooden spreader!
               </p>
-              <button className="btn-primary !bg-brand-secondary !text-brand-accent">Claim Bundle Offer</button>
+              <a href="https://www.facebook.com/profile.php?id=61577399925375" target="_blank" rel="noopener noreferrer" className="btn-primary !bg-brand-secondary !text-brand-accent inline-flex items-center justify-center">Claim Bundle Offer</a>
             </div>
             <div className="hidden lg:block">
               <img src="/group.jpg" alt="Bundle Offer" className="rounded-2xl shadow-2xl rotate-2 object-cover h-64 w-full" />
@@ -455,9 +451,9 @@ const CTASection = () => {
               Huwag nang mag-pahuli! Order na at damhin ang sarap ng Joanna's Palaman.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="btn-secondary !border-white !text-brand-primary !px-12 !py-5 !text-xl">
-                Order via Messenger
-              </button>
+              <a href="https://www.facebook.com/profile.php?id=61577399925375" target="_blank" rel="noopener noreferrer" className="btn-secondary !border-white !text-brand-primary !px-12 !py-5 !text-xl inline-flex items-center justify-center gap-3">
+                Order via Messenger <MessageCircle size={24} />
+              </a>
             </div>
             <p className="mt-8 text-sm opacity-75">✓ Fast Shipping ✓ Secure Payment ✓ 100% Satisfaction Guarantee</p>
           </div>
