@@ -278,8 +278,8 @@ const ProductSection = () => {
               <span className="bg-brand-secondary text-brand-accent px-4 py-1 rounded-full font-bold text-sm uppercase tracking-widest mb-4 inline-block">Special Bundle</span>
               <h2 className="text-4xl mb-4">Try Them All & Save!</h2>
               <p className="text-gray-300 text-lg mb-8">
-                Kunin ang aming "Palaman Sampler Pack" (5 Jars) for only <span className="text-brand-secondary font-bold text-2xl">₱560</span>. 
-                Save ₱195 and get a FREE wooden spreader!
+                Kunin ang aming "Palaman Sampler Pack" (5 Jars) for only <span className="text-brand-secondary font-bold text-2xl">₱700</span>. 
+                Save ₱50!
               </p>
               <a href="https://www.facebook.com/profile.php?id=61577399925375" target="_blank" rel="noopener noreferrer" className="btn-primary !bg-brand-secondary !text-brand-accent inline-flex items-center justify-center">Claim Bundle Offer</a>
             </div>
