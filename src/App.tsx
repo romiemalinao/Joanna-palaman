@@ -2,14 +2,6 @@ import { useState, useEffect } from 'react';
 import { ShoppingCart, Menu, X, Phone, Facebook, Instagram, ChevronRight, Star, CheckCircle2, MessageCircle, Info, HelpCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-// Import images directly so Vite bundles them
-import chocoFudgeImg from '../public/choco-fudge.png';
-import strawberryImg from '../public/strawberry.png';
-import groupImg from '../public/group.jpg';
-import yemaImg from '../public/yema.jpg';
-import chocoImg from '../public/choco.jpg';
-import milkChocoImg from '../public/milk-choco.jpg';
-
 // --- Types ---
 interface Product {
   id: string;
@@ -35,7 +27,7 @@ const PRODUCTS: Product[] = [
     name: 'Choco Fudge Flavor',
     description: 'Ang aming Best Seller! Rich, thick, and premium chocolate fudge experience in a jar.',
     price: 155,
-    image: chocoFudgeImg,
+    image: '/choco-fudge.png',
     tag: 'Best Seller'
   },
   {
@@ -43,7 +35,7 @@ const PRODUCTS: Product[] = [
     name: 'Yema Original',
     description: 'Ang paboritong matamis! Thick, creamy, at sakto ang tamis. Perfect sa mainit na pandesal.',
     price: 150,
-    image: yemaImg,
+    image: '/yema.jpg',
     tag: 'Classic'
   },
   {
@@ -51,21 +43,21 @@ const PRODUCTS: Product[] = [
     name: 'Chocolate Flavor',
     description: 'Classic chocolate goodness na swak sa budget at panlasa ng buong pamilya.',
     price: 150,
-    image: chocoImg
+    image: '/choco.jpg'
   },
   {
     id: '4',
     name: 'Milk Chocolate',
     description: 'Creamy milk chocolate blend. Sakto ang tamis, paborito ng mga kids!',
     price: 150,
-    image: milkChocoImg
+    image: '/milk-choco.jpg'
   },
   {
     id: '5',
     name: 'Strawberry Flavor',
     description: 'Sweet and fruity strawberry yema spread. Perfect for a refreshing snack!',
     price: 150,
-    image: strawberryImg
+    image: '/strawberry.png'
   }
 ];
 
@@ -214,7 +206,7 @@ const Hero = () => {
           >
             <div className="relative z-10 animate-float">
               <img 
-                src={groupImg} 
+                src="/group.jpg" 
                 alt="Delicious Palaman" 
                 className="rounded-3xl shadow-2xl border-8 border-white w-full object-cover aspect-square"
                 referrerPolicy="no-referrer"
@@ -296,7 +288,7 @@ const ProductSection = () => {
               <button className="btn-primary !bg-brand-secondary !text-brand-accent">Claim Bundle Offer</button>
             </div>
             <div className="hidden lg:block">
-              <img src={groupImg} alt="Bundle Offer" className="rounded-2xl shadow-2xl rotate-2 object-cover h-64 w-full" />
+              <img src="/group.jpg" alt="Bundle Offer" className="rounded-2xl shadow-2xl rotate-2 object-cover h-64 w-full" />
             </div>
           </div>
         </div>
@@ -313,7 +305,7 @@ const AboutSection = () => {
           <div className="relative">
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-brand-secondary/30 rounded-full blur-2xl" />
             <img 
-              src={groupImg} 
+              src="/group.jpg" 
               alt="Joanna's Palaman" 
               className="rounded-[60px] shadow-2xl relative z-10 object-cover aspect-[3/4]"
               referrerPolicy="no-referrer"
